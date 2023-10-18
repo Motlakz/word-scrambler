@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(./bg-guess-the-word.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+main {
+    border-radius: 16px;
+    background-color: #030616;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 450px;
+    height: 100%;
+    width: 100%;
+}
+header h2 {
+  background: -webkit-linear-gradient(left, rgba(116,41,198,1) 0%, rgba(201,81,231,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.scrambler input {
+    background-color: #4A5567;
+    border: none;
+    border-radius: 5px;
+    color: #97A3B6;
+    font-size: 20px;
+    outline: none;
+    padding: 15px;
+    width: 400px;
+}
+.dots span i {
+    color: #4A5567;
+}
+.boxes {
+    display: flex;
+    gap: 10px;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border: 2px solid #4A5567;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    box-sizing: border-box;
+}
+.btns {
+    position: relative;
+    top: 50px;
+}
+.btns button {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #C951E7;
+    border-bottom: 3px solid purple;
+    padding: 10px;
+    border-radius: 8px;
+    color: #F2F5F9;
+    width: 200px;
+}
+.btns button:nth-child(2) {
+    width: 150px;
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .scrambler input,
+    .boxes,
+    .btns {
+        max-width: 300px;
+    }
+    .box {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .btns button {
+        padding: 8px;
+        width: 100px;
+    }
+    .btns button:nth-child(2) {
+        width: 80px;
+    }
+}
+@media screen and (max-width:768px) {
+    .btns {
+        top: 40px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    body {
+        background-attachment: fixed;
+        background-size: 120% auto;
+    }
+}
+@media screen and (min-width: 1441px) and (max-width: 2950px) {
+    main {
+        top: 320px;
+    }
+    .btns {
+        top: 35px;
+    }
+}

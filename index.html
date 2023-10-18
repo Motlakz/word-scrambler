@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <title>Word Scrambler</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Word Scramble</h2>
+            <span class="scrambler">
+                <input type="text" name="" id="text">
+            </span>
+            <div class="attempt-info">
+                <p class="tries"></p>
+                <div class="dots">
+                    <span><i class="bi bi-circle-fill"></i></span>
+                    <span><i class="bi bi-circle-fill"></i></span>
+                    <span><i class="bi bi-circle-fill"></i></span>
+                    <span><i class="bi bi-circle-fill"></i></span>
+                    <span><i class="bi bi-circle-fill"></i></span>
+                </div>
+                <p class="fails"></p>
+            </div>
+        </header>
+        <section>
+            <div class="boxes">
+                <input type="text" class="box gradient-text" data-index="1" placeholder="A" maxlength="1">
+                <input type="text" class="box gradient-text" data-index="2" placeholder="B" maxlength="1">
+                <input type="text" class="box gradient-text" data-index="3" placeholder="C" maxlength="1">
+                <input type="text" class="box gradient-text" data-index="4" placeholder="D" maxlength="1">
+                <input type="text" class="box gradient-text" data-index="5" placeholder="E" maxlength="1">
+                <input type="text" class="box gradient-text" data-index="6" placeholder="F" maxlength="1">
+            </div>   
+        </section>
+        <footer>
+            <div class="btns d-flex gap-5">
+                <button class="random">Random</button>
+                <button type="reset" class="reset" id="resetButton">Reset</button>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
