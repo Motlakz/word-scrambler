@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function () {
+
 const inputFields = document.querySelectorAll('.box');
 const resetButton = document.getElementById('resetButton');
 const textInput = document.getElementById('text');
@@ -122,3 +124,4 @@ function clearInputFields() {
 }
 
 randomButton.click();
+});
